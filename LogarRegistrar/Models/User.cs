@@ -4,15 +4,15 @@ namespace LogarRegistrar.Models
 {
     public class User
     {
-        [Key]
-        public int pessoaId { get; set; }
-        public string pessoaNome { get; set; }
-        public string pessoaEmail { get; set; }
-        public string pessoaUsuario { get; set; }
-        public string pessoaSenha { get; set; }
-        public string Token { get; set; }
-        public string Role { get; set; }
-        public bool pessoaTipo {  get; set; }
-
+        public int Id { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public string? Username { get; set; }
+        public string? Password { get; set; }
+        public string? Token { get; set; }
+        public string? Role { get; set; }
+        public string? Email { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }
